@@ -13,8 +13,10 @@ void runTask1() {
   print('65-й елемент: ${numbers[64]}');
 
   numbers.insert(49, 1000000000);
+  print('Після вставки 1000000000 на 50-й позиції: $numbers');
 
   numbers.removeWhere((num) => [24, 45, 66, 88].contains(num));
+  print('Після видалення 24, 45, 66, 88: $numbers');
 
   int sum = 0;
   for (var number in numbers) {
